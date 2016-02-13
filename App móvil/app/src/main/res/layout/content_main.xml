@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.espol.edu.raspberrystreaming.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="389dp"
+        android:layout_height="match_parent"
+        android:layout_x="16dp"
+        android:layout_y="-13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_x="10dp"
+            android:layout_y="43dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUrl"
+                android:layout_x="-12dp"
+                android:layout_y="5dp"
+                android:hint="URL"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnIr"
+                android:layout_x="330dp"
+                android:layout_y="8dp" />
+        </LinearLayout>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:id="@+id/webView"
+            android:layout_x="0dp"
+            android:layout_y="127dp"
+            android:layout_weight="0.86" />
+    </LinearLayout>
+</RelativeLayout>
